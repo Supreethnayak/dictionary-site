@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1>Dictionary</h1>
+            <h4>(website requires api key from dictionaryapi.com)</h4>
+        </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <section class="input container">
+        <h2>Find any word exist in the world :)</h2>
+        <div class="form__wrap">
+            <div class="input__wrap">
+                <input type="text" id="input" placeholder="Type a word">
+                <button id="search">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="data container">
+        <span class="loading">Loading...</span>
+        <p class="def"></p>
+        <div class="audio"></div>
+        <div class="not__found"></div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
